@@ -1,0 +1,21 @@
+# JavaScript
+node_modules/
+coverage/
+test-results/
+playwright-report/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Java
+target/
+
+# Archivos locales
+.env
+.DS_Store
+.cla[u]de/
+CLA[U]DE.md

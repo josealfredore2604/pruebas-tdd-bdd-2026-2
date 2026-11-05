@@ -1,0 +1,42 @@
+{
+  "name": "kata-tdd-bdd-semana4",
+  "version": "1.0.0",
+  "description": "Kit de pruebas (TDD, BDD, integración y E2E) para el sistema web de predicción de la demanda",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --verbose",
+    "test:unit": "jest --verbose tests/unit",
+    "test:integration": "jest --verbose tests/integration",
+    "test:e2e": "playwright test",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "Jose Alfredo Ramirez Espinosa",
+  "license": "UNLICENSED",
+  "jest": {
+    "testMatch": [
+      "**/tests/unit/**/*.test.js",
+      "**/tests/unit/**/*.steps.js",
+      "**/tests/integration/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/server.js"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "jest": "^30.5.2",
+    "jest-cucumber": "^4.5.0",
+    "supertest": "^7.3.1"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

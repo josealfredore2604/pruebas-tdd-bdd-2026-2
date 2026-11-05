@@ -1,0 +1,22 @@
+{
+  "name": "demo-analisis-estatico",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini proyecto para la demostración en vivo de análisis estático y Clean Code",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:descuidado": "eslint src/reportes.js",
+    "lint:limpio": "eslint src/reportes.limpio.js",
+    "test": "jest --verbose --reporters=default"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "jest": "^30.5.2"
+  }
+}

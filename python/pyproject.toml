@@ -1,0 +1,20 @@
+[project]
+name = "kata-tdd-bdd-python"
+version = "0.1.0"
+description = "Kata de TDD y BDD en Python para el sistema de predicción de la demanda"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "pytest-bdd==9.0.0",
+    "ruff>=0.17.3",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
